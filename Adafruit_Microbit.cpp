@@ -33,20 +33,20 @@
 
 #define MATRIX_ROWS 3
 #define MATRIX_COLS 9
-uint8_t rowpins[MATRIX_ROWS] = {26, 27, 28};
-uint8_t colpins[MATRIX_COLS] = {3, 4, 10, 23, 24, 25, 9, 7, 6};
+const uint8_t rowpins[MATRIX_ROWS] = {26, 27, 28};
+const uint8_t colpins[MATRIX_COLS] = {3, 4, 10, 23, 24, 25, 9, 7, 6};
 
-uint8_t pixel_to_row[25] = {1, 2, 1, 2, 1, 
-			    3, 3, 3, 3, 3, 
-			    2, 1, 2, 3, 2,
-			    1, 1, 1, 1, 1,
-			    3, 2, 3, 2, 3};
+const uint8_t pixel_to_row[25] = {1, 2, 1, 2, 1, 
+				  3, 3, 3, 3, 3, 
+				  2, 1, 2, 3, 2,
+				  1, 1, 1, 1, 1,
+				  3, 2, 3, 2, 3};
 
-uint8_t pixel_to_col[25] = {1, 4, 2, 5, 3,
-			    4, 5, 6, 7, 8,
-			    2, 9, 3, 9, 1,
-			    8, 7, 6, 5, 4,
-			    3, 7, 1, 6, 2};
+const uint8_t pixel_to_col[25] = {1, 4, 2, 5, 3,
+				  4, 5, 6, 7, 8,
+				  2, 9, 3, 9, 1,
+				  8, 7, 6, 5, 4,
+				  3, 7, 1, 6, 2};
 
 volatile uint8_t currentRow = 0;
 
